@@ -1,0 +1,18 @@
+<!-- 코드 2-8 상품 마크업 추가하기: chapter-02/v-text-binding.html -->
+
+<main>
+  <div class="row product">
+    <div class="col">
+      <figure>
+        <img v-bind:src="product.image">
+      </figure>
+    </div>
+    <div class="col col-expand">
+      <h1>{{product.title}}</h1>
+      <p v-html="product.description"></p>
+      <p class="price">
+        {{product.price | formatPrice}}
+      </p>
+    </div>
+  </div>
+</main>
