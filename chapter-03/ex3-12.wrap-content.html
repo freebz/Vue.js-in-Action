@@ -1,0 +1,13 @@
+<!-- 코드 3-12 v-show로 콘텐츠 감싸기: chapter-03/wrap-content.html -->
+
+// 이것보다는
+<p v-show="showMe">Some text</p>
+<p v-show="showMe">Some more text</p>
+<p v-show="showMe">Even more text</p>
+
+// 이것이 낫습니다.
+<div v-show="showMe">
+  <p>Some text</p>
+  <p>Some more text</p>
+  <p>Even more text</p>
+</div>

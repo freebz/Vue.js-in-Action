@@ -1,0 +1,10 @@
+<!-- 코드 3-13 v-if와 v-else 지시자를 사용한 버튼: chapter-03/v-if-and-v-else.html -->
+
+<button class="btn btn-primary btn-lg"
+    v-on:click="addToCart"
+    v-if="canAddToCart"
+    >장바구니 담기</button>
+
+<button disabled="true" class="btn btn-primary btn-lg"
+    v-else
+    >장바구니 담기</button>

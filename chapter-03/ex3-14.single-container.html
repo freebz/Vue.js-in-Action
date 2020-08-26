@@ -1,0 +1,23 @@
+<!-- 코드 3-14 v-if와 v-else를 위한 단일 컨테이너 요소: chapter-03/single-container.html -->
+
+// 이렇게 하면 안 됩니다.
+<p v-if="showMe">The if text</p>
+<p>Some text related to the if text</p>
+<p v-else>The else text</p>
+
+// 이렇게도 안 됩니다.
+<div>
+  <p v-if="showMe">The if text</p>
+</div>
+<div>
+  <p v-else>The else text</p>
+</div>
+
+// 그 대신 그룹화하세요.
+<div v-if="showMe">
+  <p>The if text</p>
+  <p>Some text related to the if text</p>
+</div>
+<div v-else>
+  <p>The else text</p>
+</div>

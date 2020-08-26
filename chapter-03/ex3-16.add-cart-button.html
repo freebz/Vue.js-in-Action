@@ -1,0 +1,12 @@
+<!-- 코드 3-16 <장바구니 담기> 버튼 추가하기: chapter-03/add-cart-button.html -->
+
+<div class="nav navbar-nav navbar-right cart">
+  <button type="button"
+      class="btn btn-default btn-lg"
+      v-on:click="showCheckout">
+    <span class="glyphicon glyphicon-shopping-cart">
+      {{cartItemCount}}
+    </span>
+    <span>체크아웃</span>
+  </button>
+</div>
