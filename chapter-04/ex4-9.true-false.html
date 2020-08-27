@@ -1,0 +1,12 @@
+<!-- 코드 4-9 선물 체크 박스에 참, 거짓 값 바인딩하기: chapter-04/true-false.html -->
+
+<div class="form-group">
+  <div class="col-md-6 boxes">
+    <input type="checkbox"
+        id="gift" value="true"
+        v-bind:true-value="order.sendGift"
+        v-bind:false-value="order.dontSendGift"
+        v-model="order.gift">
+    <label for="gift">선물로 보내기?</label>
+  </div>
+</div>

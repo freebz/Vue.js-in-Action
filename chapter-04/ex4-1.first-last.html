@@ -1,0 +1,18 @@
+<!-- 코드 4-1 성과 이름 입력의 v-model 지시자: chapter-04/first-last.html -->
+
+<div class="col-md-6">
+  <strong>이름:</strong>
+  <input v-model="order.firstName"
+      class="form-control" />
+</div>
+<div class="col-md-6">
+  <strong>성:</strong>
+  <input v-model="order.lastName"
+      class="form-control" />
+</div>
+<div class="col-md-12 verify">
+  <pre>
+    이름: {{order.firstName}}
+    성: {{order.lastName}}
+  </pre>
+</div>
