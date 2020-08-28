@@ -1,0 +1,5 @@
+<!-- 코드 5-18 canAddToCart 템플릿 수정하기: chapter-05/update-can-add-cart.html -->
+
+<button class="btn btn-primary btn-lg"
+    v-on:click="addToCart(product)"
+    v-if="canAddToCart(product)">장바구니 담기</button>

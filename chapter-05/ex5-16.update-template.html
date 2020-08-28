@@ -1,0 +1,10 @@
+<!-- 코드 5-16 점수를 위한 템플릿 업데이트하기: chapter-05/update-template.html -->
+
+<span class="inventory-message"
+    v-else>지금 구매하세요!
+</span>
+<div class="rating">
+  <span v-bind:class="{'rating-active': checkRating(n, product)}"
+      v-for"n in 5">☆
+  </span>
+</div>
