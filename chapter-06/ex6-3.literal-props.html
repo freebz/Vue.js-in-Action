@@ -1,0 +1,24 @@
+<!-- 코드 6-3 컴포넌트에 리터럴 속성 사용하기: chapter-06/literal-props.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <my-component text="World"></my-component>
+  </div>
+  <script>
+    const MyComponent = {
+      template: '<div>안녕 {{text}}! </div>',
+      props: ['text']
+    }
+
+    new Vue({
+      el: "#app",
+      components: {'my-component': MyComponent}
+    });
+  </script>
+</body>
+</html>

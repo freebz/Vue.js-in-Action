@@ -1,0 +1,34 @@
+<!-- 코드 6-5 전역 카운터를 사용한 동적 속성: chapter-06/dynamic-props-counter.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <my-component></my-component>
+    <my-component></my-component>
+    <my-component></my-component>
+  </div>
+  <script>
+  const counter = {counter: 0};
+  const MyComponent = {
+    template: '<div><button v-on:click="counter +=1"> {{counter}} </button></div>',
+    data() {
+      return counter;
+    }
+  }
+
+  new Vue({
+    el: "#app",
+    components: {'my-component': MyComponent},
+    data() {
+      return {
+        message: ''
+      }
+    }
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- 코드 6-4 동적 속성 사용하기: chapter-06/dynamic-props.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <my-component :text="message"></my-component>
+  </div>
+  <script>
+  const MyComponent = {
+    template: `<div>안녕 {{text}} {{tester1}} </div>`,
+    props: ['text']
+  };
+
+  new Vue({
+    el: "#app",
+    components: {'my-component': MyComponent},
+    data() {
+      return {
+        message: '부모 컴포넌트로부터!'
+      }
+    }
+  });
+  </script>
+</body>
+</html>
