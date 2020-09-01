@@ -1,0 +1,11 @@
+<!-- 코드 7-20 메인의 라우터 링크 업데이트하기: chapter-07/router-link-example.html -->
+
+...
+<div class="col-md-6 col-md-offset-0 description">
+  <router-link
+      tag="h1"
+      :to="{name: 'Id', params: {id: product.id}}">
+    {{product.title}}
+  </router-link>
+  <p v-html="product.description"></p>
+...
