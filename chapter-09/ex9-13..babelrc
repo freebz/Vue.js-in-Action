@@ -1,0 +1,17 @@
+// 코드 9-13 .barbelrc 업데이트하기: chapter-09/jsx-example/.babelrc
+
+{
+  "presets": [
+    ["env", {
+      "modules": false
+    }],
+    "stage-2",
+    "env"
+  ],
+  "plugins": ["transform-runtime", "transform-vue-jsx"],
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"]
+    }
+  }
+}
