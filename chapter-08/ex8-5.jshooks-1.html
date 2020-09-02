@@ -1,0 +1,11 @@
+<!-- 코드 8-5 자바스크립트 훅 트랜지션: chapter-08/jshooks-1.html -->
+
+<transition name="fade"
+    @before-enter="beforeEnter"
+    @enter="enter"
+    @after-enter="afterEnter"
+    @before-leave="beforeLeave"
+    @leave="leave"
+    @after-leave="afterLeave"
+    @leave-cancelled="leaveCancelled"
+    :css="false">

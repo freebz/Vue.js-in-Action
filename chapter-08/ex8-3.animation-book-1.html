@@ -1,0 +1,10 @@
+<!-- 코드 8-3 스케일을 포함한 애니메이션: chapter-08/animation-book-1.html -->
+
+<div @click="show = !show">
+  <h2>{{title}}</h2>
+</div>
+<transition name="bounce">
+  <div v-if="show">
+    <h1>{{description}}</h1>
+  </div>
+</transition>
