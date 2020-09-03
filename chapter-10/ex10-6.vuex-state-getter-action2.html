@@ -1,0 +1,12 @@
+<!-- 코드 10-6 액션 추가하기: chapter-10/vuex-state-getter-action2.html -->
+
+...
+},
+actions: {
+  increment(context, payload) {
+    setTimeout(function() {
+      context.commit('increment', payload);
+    }, 2000);
+  }
+}
+...

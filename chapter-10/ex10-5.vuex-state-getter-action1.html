@@ -1,0 +1,17 @@
+<!-- 코드 10-5 새로운 게터 추가하기: chapter-10/vuex-state-getter-action1.html -->
+
+...
+mutations: {
+  increment(state, payload) {
+    state.count += payload;
+  }
+},
+getters: {
+  msg(state) {
+    return state.msg.toUpperCase();
+  },
+  count(state) {
+    return state.count;
+  }
+},
+...

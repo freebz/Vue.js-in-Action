@@ -1,0 +1,26 @@
+<!-- 코드 10-3 Vue.js 인스턴스 추가하기: chapter-10/vuex-instance.html -->
+
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        header: 'Vuex 앱'
+      }
+    },
+    computed: {
+      welcome() {
+        return store.state.msg
+      },
+      counter() {
+        return store.state.count;
+      }
+    },
+    methods: {
+      increment() {
+        store.commit('increment')
+      }
+    }
+  });
+</script>
+</body>
+</html>

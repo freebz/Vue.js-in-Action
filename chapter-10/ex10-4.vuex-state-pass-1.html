@@ -1,0 +1,15 @@
+<!-- 코드 10-4 뮤테이션에 payload 전달하기: chapter-10/vuex-state-pass-1.html -->
+
+...
+mutations: {
+  increment(state, payload) {
+    state.count += payload;
+  }
+}
+...
+methods: {
+  increment() {
+    store.commit('increment', 10)
+  }
+}
+...

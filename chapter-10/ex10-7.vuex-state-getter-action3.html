@@ -1,0 +1,25 @@
+<!-- 코드 10-7 Vue.js 인스턴스 업데이트하기: chapter-10/vuex-state-getter-action3.html -->
+
+...
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        header: 'Vuex 앱'
+      }
+    },
+    computed: {
+      welcome() {
+        return store.getters.msg;
+      },
+      counter() {
+        return store.getters.count;
+      }
+    },
+    methods: {
+      increment() {
+        store.dispatch('increment', 10);
+      }
+    }
+  });
+...

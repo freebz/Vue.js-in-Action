@@ -1,0 +1,16 @@
+<!-- 코드 10-10 store.js에 액션과 게터 추가하기: chapter-10/store-part2.html -->
+
+...
+actions: {
+  initStore: ({commit}) => {
+    axios.get('static/products.json')
+    .then((response) => {
+      console.log(response.data.products);
+      commit('SET_STORE', response.data.products);
+    });
+  }
+},
+getters: {
+  products: state => state.products
+}
+});

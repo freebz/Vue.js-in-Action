@@ -1,0 +1,12 @@
+<!-- 코드 10-15 mapState 예제: chapter-10/map-state.html -->
+
+import {mapState} from 'vuex'
+...
+computed: {
+  ...mapState([
+      'data1',
+      'data2',
+      'data3'
+  ])
+}
+...
