@@ -1,0 +1,11 @@
+// 코드 12-13 package.json에 inspect 추가하기: chapter-12/petstore/package.json
+
+...
+  "private": true,
+  "scripts": {
+...
+    "inspect": "node --inspect --inspect-brk node_modules/mocha-webpack/bin/
+        mocha-webpack --webpack-config build/webpack.base.conf.js --require test/setup.js
+        test/**/*.spec.js"
+  },
+...
